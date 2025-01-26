@@ -1,0 +1,12 @@
+#include <iostream>
+// podstawowa paczka in/out
+using namespace std;
+// nie potrzeba pisać "std::" do "cout","endl"
+
+int main()
+{
+  
+    cout << "Witaj Świecie!" << endl;
+    return 0;
+    
+}
