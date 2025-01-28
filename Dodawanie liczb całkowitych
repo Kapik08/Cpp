@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int liczba_a, liczba_b, liczba_c;
+
+int main()
+{
+    // zapis 
+    cout << "podaj liczbę a ";
+    cin >> liczba_a;
+    cout << "podaj liczbę b ";
+    cin >> liczba_b;
+    
+    // dodawanie
+    liczba_c = liczba_a + liczba_b;
+    cout << "wynik " << liczba_c;
+    return 0;
+}
