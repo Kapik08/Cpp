@@ -1,0 +1,64 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string operacja;
+int liczba_a, liczba_b;
+
+int main()
+{
+    // liczba a
+    cout <<"Podaj liczbę a ";
+    cin >> liczba_a;
+    
+    // liczba b
+    cout <<"Podaj liczbę b ";
+    cin >> liczba_b;
+
+    // operacja
+    cout <<"Podaj operację działania " << endl;
+    cout <<"Dodawanie(+)" << endl;
+    cout <<"Odejmowanie(-)" << endl;
+    cout <<"mnożenie(x)" << endl;
+    cout <<"dzielenie(/)" << endl;
+    cin >> operacja;
+
+    //dodawanie
+    if(operacja=="+")
+    {
+        cout << liczba_a + liczba_b;
+    }
+
+    //odejmowanie
+    else if(operacja=="-")
+    {
+        cout << liczba_a - liczba_b;
+    }
+
+    //mnożenie
+    else if(operacja=="x"|| operacja =="*")
+    {
+        cout << liczba_a * liczba_b;
+    }
+
+    //dzielenie
+    // tylko b!=0!!
+
+    else if(operacja=="/")
+    {
+        if (liczba_b!=0)
+            {
+                cout <<liczba_a / liczba_b;    
+            } 
+            
+        else
+            {
+                cout<< "nie dzielnie przez 0";                    
+            }       
+    }   
+    else{
+        cout<<"błąd";    
+    }
+
+    return 0;
+}
