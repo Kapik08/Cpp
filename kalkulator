@@ -3,7 +3,7 @@
 using namespace std;
 
 string operacja;
-int liczba_a, liczba_b;
+float liczba_a, liczba_b;
 
 int main()
 {
